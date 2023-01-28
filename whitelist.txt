@@ -261,8 +261,8 @@
 # Reddit
 @@||reddit.com^$important
 
-# Reddit
-@@||api.tvnow.de
+# RTL+
+@@||api.tvnow.de^$important
 
 # Sonos
 @@||msmetrics.ws.sonos.com^$important
