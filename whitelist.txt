@@ -261,6 +261,9 @@
 # Reddit
 @@||reddit.com^$important
 
+# Reddit
+@@||api.tvnow.de
+
 # Sonos
 @@||msmetrics.ws.sonos.com^$important
 
