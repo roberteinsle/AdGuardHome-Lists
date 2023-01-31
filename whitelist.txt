@@ -2,3 +2,11 @@
 
 # Robert Einsle
 @@||ads.google.com^$important
+
+# Bild.de
+# =======
+acdn.adnxs.com
+connect.facebook.net
+de.ioam.de
+rem-track.bild.de
+tags.tiqcdn.com
