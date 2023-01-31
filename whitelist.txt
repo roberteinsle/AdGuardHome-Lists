@@ -5,7 +5,7 @@
 
 # Bild.de
 # =======
-acdn.adnxs.com
-de.ioam.de
-rem-track.bild.de
-tags.tiqcdn.com
+@@||acdn.adnxs.com^$important
+@@||de.ioam.de^$important
+@@||rem-track.bild.de^$important
+@@||tags.tiqcdn.com^$important
