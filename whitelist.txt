@@ -7,6 +7,21 @@
 @@||rem-track.bild.de^$important
 @@||tags.tiqcdn.com^$important
 
+# Microsoft365
+# =======
+@@||outlook.office.com^
+@@||outlook.office365.com^
+@@||login.microsoftonline.com^
+@@||login.live.com^
+@@||graph.microsoft.com^
+@@||*.sharepoint.com^
+@@||teams.microsoft.com^
+@@||*.teams.microsoft.com^
+@@||outlook.live.com^
+@@||office.com^
+@@||office365.com^
+@@||microsoft365.com^
+
 # XBOX
 # =======
 @@||xbox.ipv6.microsoft.com^
