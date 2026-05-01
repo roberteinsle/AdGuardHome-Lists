@@ -1,49 +1,156 @@
-! Whitelist - Domains
+! Title: Personal AdGuard Home Whitelist - Robert Einsle
+! Description: Allowlist for Microsoft 365, Xbox, Apple, Banking, Smart Home, Self-Hosting & VoIP
+! Homepage: https://github.com/roberteinsle/AdGuardHome-Lists
+! License: MIT
+! Last modified: 2026-05-01
+!
+! Syntax: @@||domain^ allows the domain and all subdomains
+! Use $important only when needed to override aggressive block rules
 
-# Bild.de
-# =======
+! ==========================================
+! Microsoft 365 / Office / Teams / OneDrive
+! ==========================================
+@@||office.com^
+@@||office365.com^
+@@||microsoft365.com^
+@@||microsoftonline.com^
+@@||outlook.com^
+@@||outlook.office.com^
+@@||outlook.office365.com^
+@@||outlook.live.com^
+@@||live.com^
+@@||sharepoint.com^
+@@||onedrive.com^
+@@||onedrive.live.com^
+@@||1drv.com^
+@@||1drv.ms^
+@@||graph.microsoft.com^
+@@||teams.microsoft.com^
+@@||skype.com^
+@@||lync.com^
+@@||officeapps.live.com^
+@@||cdn.office.net^
+@@||res.cdn.office.net^
+@@||static.sharepointonline.com^
+@@||protection.outlook.com^
+@@||azureedge.net^
+@@||msauth.net^
+@@||msftauth.net^
+@@||msidentity.com^
+
+! ==========================================
+! Microsoft Updates / Telemetry (essential)
+! ==========================================
+@@||windowsupdate.com^
+@@||update.microsoft.com^
+@@||delivery.mp.microsoft.com^
+@@||tlu.dl.delivery.mp.microsoft.com^
+@@||ctldl.windowsupdate.com^
+@@||www.msftncsi.com^
+@@||www.msftconnecttest.com^
+@@||dns.msftncsi.com^
+@@||go.microsoft.com^
+
+! ==========================================
+! Xbox Live / Game Pass
+! ==========================================
+@@||xboxlive.com^
+@@||xbox.com^
+@@||xbox.ipv6.microsoft.com^
+@@||catalog.gamepass.com^
+@@||dmd.metaservices.microsoft.com^
+
+! ==========================================
+! Apple / iCloud / Family Sharing
+! ==========================================
+@@||apple.com^
+@@||icloud.com^
+@@||icloud-content.com^
+@@||me.com^
+@@||mzstatic.com^
+@@||cdn-apple.com^
+@@||apple-cloudkit.com^
+@@||push.apple.com^
+@@||itunes.apple.com^
+@@||appstore.com^
+@@||digicert.com^
+
+! ==========================================
+! Banking (DKB, Haspa, Consorsbank, 1822direkt, Hanseatic)
+! ==========================================
+@@||dkb.de^
+@@||ib.dkb.de^
+@@||banking.dkb.de^
+@@||haspa.de^
+@@||consorsbank.de^
+@@||1822direkt.de^
+@@||1822direkt-banking.de^
+@@||hanseaticbank.de^
+@@||hanseaticbank-direct.de^
+@@||paypal.com^
+@@||paypalobjects.com^
+@@||sparkasse.de^
+@@||sparkasse-banking.de^
+@@||finanzportal.fiducia.de^
+@@||fiducia.de^
+
+! ==========================================
+! Smart Home (Home Assistant, Tibber, Solplanet, Zigbee2MQTT)
+! ==========================================
+@@||home-assistant.io^
+@@||nabucasa.com^
+@@||tibber.com^
+@@||app.tibber.com^
+@@||solplanet.net^
+@@||solplanet.com.cn^
+
+! ==========================================
+! VoIP / Telephony (3CX, Easybell, Sipgate, Twilio)
+! ==========================================
+@@||3cx.com^
+@@||3cx.net^
+@@||easybell.de^
+@@||sipgate.de^
+@@||sipgate.net^
+@@||twilio.com^
+
+! ==========================================
+! Self-Hosting / Coolify / Hetzner / GitHub
+! ==========================================
+@@||einsle.com^
+@@||einsle.cloud^
+@@||liedelt.immo^
+@@||dfliedelt-immobilien.com^
+@@||hetzner.com^
+@@||hetzner.cloud^
+@@||coolify.io^
+@@||github.com^
+@@||githubusercontent.com^
+@@||githubassets.com^
+@@||cloudflare.com^
+@@||cloudflareinsights.com^
+
+! ==========================================
+! Media (Plex, Spotify)
+! ==========================================
+@@||plex.tv^
+@@||plex.direct^
+@@||spotify.com^
+@@||scdn.co^
+@@||spotifycdn.com^
+
+! ==========================================
+! News / German Sites (Bild requires $important)
+! ==========================================
 @@||acdn.adnxs.com^$important
 @@||de.ioam.de^$important
 @@||rem-track.bild.de^$important
 @@||tags.tiqcdn.com^$important
 
-# Microsoft365
-# =======
-@@||outlook.office.com^
-@@||outlook.office365.com^
-@@||login.microsoftonline.com^
-@@||login.live.com^
-@@||graph.microsoft.com^
-@@||*.sharepoint.com^
-@@||teams.microsoft.com^
-@@||*.teams.microsoft.com^
-@@||outlook.live.com^
-@@||office.com^
-@@||office365.com^
-@@||microsoft365.com^
-
-# XBOX
-# =======
-@@||xbox.ipv6.microsoft.com^
-@@||device.auth.xboxlive.com^
-@@||www.msftncsi.com^
-@@||title.mgt.xboxlive.com^
-@@||xsts.auth.xboxlive.com^
-@@||title.auth.xboxlive.com^
-@@||ctldl.windowsupdate.com^
-@@||attestation.xboxlive.com^
-@@||xboxexperiencesprod.experimentation.xboxlive.com^
-@@||xflight.xboxlive.com^
-@@||cert.mgt.xboxlive.com^
-@@||xkms.xboxlive.com^
-@@||def-vef.xboxlive.com^
-@@||notify.xboxlive.com^
-@@||help.ui.xboxlive.com^
-@@||licensing.xboxlive.com^
-@@||eds.xboxlive.com^
-@@||www.xboxlive.com^
-@@||v10.vortex-win.data.microsoft.com^
-@@||settings-win.data.microsoft.com^
-@@||catalog.gamepass.com^
-@@||go.microsoft.com^
-@@||dmd.metaservices.microsoft.com^
+! ==========================================
+! Captive Portal Detection (Public WLAN)
+! ==========================================
+@@||captive.apple.com^
+@@||connectivitycheck.gstatic.com^
+@@||connectivitycheck.android.com^
+@@||detectportal.firefox.com^
